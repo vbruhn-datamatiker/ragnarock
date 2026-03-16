@@ -3,6 +3,7 @@
 
 // Write your JavaScript code.
 
+//Den her kode mangler uddybning
 document.addEventListener("DOMContentLoaded", function () {
     const tabs = document.querySelectorAll(".tablinks");
 
