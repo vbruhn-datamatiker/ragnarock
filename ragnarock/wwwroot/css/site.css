@@ -1,3 +1,5 @@
+/* Guld, gul, navyblue, rød */
+
 html {
     font-size: 14px;
 }
@@ -19,7 +21,13 @@ html {
 
 body {
     margin-bottom: 60px;
+    background-color: lightgray;
 }
+
+header {
+    background-color: black;
+}
+
 /* Adjusted the container to ocupy the max with of the body */
 div.container {
     max-width: 100%;
@@ -32,38 +40,6 @@ div.container {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
-}
-
-/* --------------- Styling af class .tab til bandmedlemmer ------------ */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-    /*Style buttons of tab*/
-    .tab button {
-        background-color: inherit;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        transition: 0.3s;
-    }
-        /*Add background color of buttons on hover*/
-        .tab button:hover {
-            background-color: #ddd;
-        }
-        /* Create an active/current tablink class */
-        .tab button.active {
-            background-color: #ccc;
-        }
-/* Style id="tabcontent" */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
 }
 
 /* PHOTO GALLERY Styling */
@@ -93,8 +69,7 @@ div.scroll-container img {
     padding: 80px 20px;
     max-width: 100%;
     margin: auto;
-    background-color: dimgray;
-}
+    }
 /* Image break, plads mellem sektioner*/
 
 .image-break {
@@ -105,11 +80,10 @@ div.scroll-container img {
     background-attachment: fixed;
 }
 
-
 /*--------------------- Styling af cards i bandemedlemmer -------------------**/
-    .card:hover {
-        transform: scale(1.03);
-    }
+.card:hover {
+    transform: scale(1.03);
+}
 
 /* Space mellem Collapse menu og knap */
 .collapse {
