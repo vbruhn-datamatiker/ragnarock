@@ -74,7 +74,6 @@ div.scroll-container img {
 
 .image-break {
     height: 400px;
-    background-image: url('/images/gasolin1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
