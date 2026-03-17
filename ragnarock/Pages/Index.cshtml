@@ -36,6 +36,10 @@
 
         <!------------ End of MODUL 1 ---------->
     </div>
+
+    <!-- IMAGE BREAK -->
+    <div class="image-break image-break1"></div>
+
     <!--------- MODUL 2 --------->
     <section class="content-section" id="modul">
 
@@ -275,6 +279,7 @@
 
                                             Han var med til at forme bandets tidlige lyd og spillede på deres første udgivelser. Selvom han senere forlod bandet, var han en vigtig del af Gasolins begyndelse.
 
+<<<<<<< HEAD
                                             Efter tiden i Gasolin arbejdede han videre med musik i andre projekter.
                                         </b>
                                     </p>
@@ -284,3 +289,50 @@
 
                             <div class="image-break"></div>
                         </div>
+=======
+                        Efter tiden i Gasolin arbejdede han videre med musik i andre projekter.
+                    </b>
+                </p>
+            </div>
+        </div>
+        <!-- End of MODUL 2 -->
+    </section>
+    
+    <!-- IMAGE BREAK -->
+    <div class="image-break image-break2"></div>
+
+    <!-- modul 3 -->
+    <section class="content-section" id="modul3">
+        <h1>Galleri</h1>
+
+
+    </section>
+
+    <!-- IMAGE BREAK -->
+    <div class="image-break image-break3"></div>
+
+    <!-- modul 3 -->
+    <section class="content-section" id="modul4">
+        <h1>Section 4</h1>
+
+        <form method="post">
+            @for (int i = 0; i < Model.Questions.Count; i++)
+            {
+                <div>
+                    <p>@Model.Questions[i].Question</p>
+                    <input asp-for="Answers[i]" />
+                </div>
+            }
+
+            <button type="submit">Tjek svar</button>
+        </form>
+
+        @if (Model.Result != null)
+        {
+            <p>@Model.Result</p>
+        }
+    </section>
+
+
+</div>
+>>>>>>> d72af013374f708e37de215eef550636a7a22b1d

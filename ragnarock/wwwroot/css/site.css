@@ -69,8 +69,9 @@ div.scroll-container img {
     padding: 80px 20px;
     max-width: 100%;
     margin: auto;
-    }
-/* Image break, plads mellem sektioner*/
+    background-color: dimgray;
+}
+/* Image breaks, plads mellem sektioner*/
 
 .image-break {
     height: 400px;
