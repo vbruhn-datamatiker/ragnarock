@@ -95,14 +95,26 @@ div.scroll-container img {
     margin: auto;
     background-color: dimgray;
 }
-/* Image break, plads mellem sektioner*/
+/* Image breaks, plads mellem sektioner*/
 
 .image-break {
     height: 400px;
-    background-image: url('/images/gasolin1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+/* Forskellige billeder til breaks */
+.image-break1 {
+    background-image: url('/images/gasolin1.jpg');
+}
+
+.image-break2 {
+    background-image: url('/images/gasolin3.jpg');
+}
+
+.image-break3 {
+    background-image: url('/images/gasolin2.jpg')
 }
 
 
