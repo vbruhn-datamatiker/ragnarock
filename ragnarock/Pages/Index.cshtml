@@ -40,7 +40,7 @@
         <h1>Bandmedlemmer</h1>
 
         <!-- Div Container til Bandemedlemmer image gallery -->
-        <!-- Tab navigation buttons -->
+        <!-- Tab navigation buttons
         <div class="tabNav">
             <button class="tablinks" tab="kimLarsen">Kim Larsen</button>
             <button class="tablinks" tab="franzBeckerlee">Franz Beckerlee</button>
@@ -49,12 +49,15 @@
             <button class="tablinks" tab="bjornUglebjerg">Bjorn Uglebjerg</button>
         </div>
 
+         -->
+
         <!------------ BANDEMEDLEMMERNE ------------>
         <div class="container mt-3 max-width">
-            <h2>Card Image</h2>
-            <p>Image at the top (card-img-top):</p>
-
+            <!-- Row til display af medlemmer-->
             <div class="row">
+
+
+                <!-- KIM LARSEN -->
                 <div class="col">
                     <div class="card">
                         <img class="card-img-top" src="~/images/kimlarsen2.png" alt="Card image">
@@ -85,75 +88,124 @@
                         </div>
                     </div>
 
+                <!-- FRANZ BECKERLEE -->
                    <div class="col">
                         <div class="card">
                             <img class="card-img-top" src="~/images/franzbeckerlee.jpg" alt="Card image">
                                 <div class="card-body">
-                                    <h4 class="card-title">John Doe</h4>
-                                    <p class="card-text">Some example text some example text.</p>
-                                    <a href="#" class="btn btn-primary">See Profile</a>
+                                    <h4 class="card-title">Franz Beckerlee</h4>
+                                    <p class="card-text">Guitarist ?</p>
+                                    
+                            <!-- Click-to-expand knap for at se mere om medlem-->
+                            <a class="btn btn-primary"
+                               data-bs-toggle="collapse"
+                               href="#franzCollapse"
+                               role="button"
+                               aria-expanded="false"
+                               aria-controls="franzCollapse">
+                                Se mere
+                            </a>
+
+                            <!-- Tekstfelt til collapse -->
+                            <div class="collapse" id="franzCollapse">
+                                <div class="card card-body">
+                                    Skriv noget her om Franz Beckerlee
                                 </div>
                             </div>
+
+                                </div>
                         </div>
+                   </div>
 
-                            <div class="col">
-                            <div class="card">
-                                <img class="card-img-top" src="~/images/wilijonsson.jpg" alt="Card image">
-                                    <div class="card-body"> 
-                                        <h4 class="card-title">John Doe</h4>
-                                        <p class="card-text">Some example text some example text.</p>
-                                        <a href="#" class="btn btn-primary">See Profile</a>
-                                    </div>
+
+                <!-- Wili Jønsson -->
+                   <div class="col">
+                        <div class="card">
+                           <img class="card-img-top" src="~/images/wilijonsson.jpg" alt="Card image">
+                              <div class="card-body"> 
+                                   <h4 class="card-title">Wili Jønsson</h4>
+                                    <p class="card-text">Bassist</p>
+
+                            <!-- Click-to-expand knap for at se mere om medlem-->
+                            <a class="btn btn-primary"
+                               data-bs-toggle="collapse"
+                               href="#wiliCollapse"
+                               role="button"
+                               aria-expanded="false"
+                               aria-controls="wiliCollapse">
+                                Se mere
+                            </a>
+
+                            <!-- Tekstfelt til collapse -->
+                            <div class="collapse" id="wiliCollapse">
+                                <div class="card card-body">
+                                    Skriv noget her om Wili Jønsson
                                 </div>
                             </div>
+                              </div>
+                        </div>
+                   </div>
+                   
 
+                    <!-- SØREN BERLEV -->
                             <div class="col">
                                 <div class="card">
                                     <img class="card-img-top" src="~/images/sorenberlev.jpg" alt="Card image">
                                         <div class="card-body">
-                                            <h4 class="card-title">John Doe</h4>
-                                            <p class="card-text">Some example text some example text.</p>
-                                            <a href="#" class="btn btn-primary">See Profile</a>
+                                            <h4 class="card-title">Søren Berlev</h4>
+                                            <p class="card-text">Trommeslager</p>
+                                            
+                            <!-- Click-to-expand knap for at se mere om medlem-->
+                            <a class="btn btn-primary"
+                               data-bs-toggle="collapse"
+                               href="#sorenCollapse"
+                               role="button"
+                               aria-expanded="false"
+                               aria-controls="sorenCollapse">
+                                Se mere
+                            </a>
+
+                            <!-- Tekstfelt til collapse -->
+                            <div class="collapse" id="sorenCollapse">
+                                <div class="card card-body">
+                                    Skriv noget her om Kim Larsen
+                                </div>
+                            </div>
+
                                         </div>
                                     </div>
                                 </div>
                             
-                        
+                        <!-- BJØRN UGLEBJERG -->
                             <div class="col">
                                 <div class="card">
                                     <img class="card-img-top" src="~/images/bjornuglebjerg.jpg" alt="Card image">
                                         <div class="card-body">
-                                            <h4 class="card-title">John Doe</h4>
-                                            <p class="card-text">Some example text some example text.</p>
-                                            <a href="#" class="btn btn-primary">See Profile</a>
+                                            <h4 class="card-title">Bjørn Uglebjerg</h4>
+                                            <p class="card-text">Trommeslager</p>
+
+                            <!-- Click-to-expand knap for at se mere om medlem-->
+                            <a class="btn btn-primary"
+                               data-bs-toggle="collapse"
+                               href="#bjornCollapse"
+                               role="button"
+                               aria-expanded="false"
+                               aria-controls="bjornCollapse">
+                                Se mere
+                            </a>
+
+                            <!-- Tekstfelt til collapse -->
+                            <div class="collapse" id="bjornCollapse">
+                                <div class="card card-body">
+                                    Skriv noget her om Kim Larsen
+                                </div>
+                            </div>
                                         </div>
                                 </div>
                             </div>
             </div>
         </div>
 
-
-          
-        <!-- Tab Link
-
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item" role="presentation">
-    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
-  </li>
-  <li class="nav-item" role="presentation">
-    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-</div>
-
-                        -->
         <!-- Indhold til bandemedlemmerne -->
         <!-- Kim Larsen -->
         <div class="container" max-width>
