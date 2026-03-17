@@ -104,3 +104,20 @@ div.scroll-container img {
     background-position: center;
     background-attachment: fixed;
 }
+
+
+/*--------------------- Styling af cards i bandemedlemmer -------------------**/
+    .card:hover {
+        transform: scale(1.03);
+    }
+
+/* Space mellem Collapse menu og knap */
+.collapse {
+    margin-top: 10px;
+}
+
+/* Ens billedstørrelse */
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
