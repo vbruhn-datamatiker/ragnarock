@@ -51,28 +51,45 @@
             <button class="tablinks" tab="bjornUglebjerg">Bjorn Uglebjerg</button>
         </div>
 
-        <!-- Cards section test
+        <!------------ BANDEMEDLEMMERNE ------------>
         <div class="container mt-3 max-width">
-
             <h2>Card Image</h2>
             <p>Image at the top (card-img-top):</p>
 
             <div class="row">
-
                 <div class="col">
                     <div class="card">
                         <img class="card-img-top" src="~/images/kimlarsen2.png" alt="Card image">
                             <div class="card-body">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Some example text some example text.</p>
-                                <a href="#" class="btn btn-primary">See Profile</a>
+                                <h4 class="card-title">Kim Larsen</h4>
+                                <p class="card-text">Forsanger</p>
+
+                                <!-- Click-to-expand knap for at se mere om medlem-->
+                            <a class="btn btn-primary"
+                               data-bs-toggle="collapse"
+                               href="#kimCollapse"
+                               role="button"
+                               aria-expanded="false"
+                               aria-controls="kimCollapse">
+                                Se mere
+                            </a>
+
+                                <!-- Tekstfelt til collapse -->
+                                <div class="collapse" id="kimCollapse">
+                                    <div class="card card-body">
+                                        Skriv noget her om Kim Larsen
+                                    </div>
+                                </div>
+
+
                             </div>
+                            
                         </div>
                     </div>
 
-                    <div class="col">
+                   <div class="col">
                         <div class="card">
-                            <img class="card-img-top" src="~/images/kimlarsen2.png" alt="Card image">
+                            <img class="card-img-top" src="~/images/franzbeckerlee.jpg" alt="Card image">
                                 <div class="card-body">
                                     <h4 class="card-title">John Doe</h4>
                                     <p class="card-text">Some example text some example text.</p>
@@ -81,10 +98,10 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                            <div class="col">
                             <div class="card">
-                                <img class="card-img-top" src="~/images/kimlarsen2.png" alt="Card image">
-                                    <div class="card-body">
+                                <img class="card-img-top" src="~/images/wilijonsson.jpg" alt="Card image">
+                                    <div class="card-body"> 
                                         <h4 class="card-title">John Doe</h4>
                                         <p class="card-text">Some example text some example text.</p>
                                         <a href="#" class="btn btn-primary">See Profile</a>
@@ -94,7 +111,7 @@
 
                             <div class="col">
                                 <div class="card">
-                                    <img class="card-img-top" src="~/images/kimlarsen2.png" alt="Card image">
+                                    <img class="card-img-top" src="~/images/sorenberlev.jpg" alt="Card image">
                                         <div class="card-body">
                                             <h4 class="card-title">John Doe</h4>
                                             <p class="card-text">Some example text some example text.</p>
@@ -102,10 +119,23 @@
                                         </div>
                                     </div>
                                 </div>
+                            
+                        
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img-top" src="~/images/bjornuglebjerg.jpg" alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">John Doe</h4>
+                                            <p class="card-text">Some example text some example text.</p>
+                                            <a href="#" class="btn btn-primary">See Profile</a>
+                                        </div>
+                                </div>
                             </div>
-                        </div>
+            </div>
+        </div>
 
-                       END of CARDS -->
+
+          
         <!-- Tab Link
 
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -130,7 +160,6 @@
         <!-- Kim Larsen -->
         <div class="container" max-width>
             <div id="kimLarsen" class="tabcontent">
-                <img src="~/images/kimlarsen.jpg" alt="Kim Larsen" />
                 <p>
                     <b>
                         Kim Larsen (1945–2018) var forsanger, guitarist og sangskriver i Gasolin og er en af de mest kendte musikere i dansk musikhistorie. Han blev født i København og var kendt for sin karakteristiske stemme, stærke tekster og evne til at skrive sange, som mange danskere kunne relatere til.
