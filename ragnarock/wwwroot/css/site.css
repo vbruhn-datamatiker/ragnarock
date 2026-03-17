@@ -93,13 +93,14 @@ div.scroll-container img {
     background-color: dimgray;
 }
 /* Image break, plads mellem sektioner*/
-.image-break {
-    width: 100%;
-    margin: 40px 0;
-}
 
-.image-break img {
-    width: 100%;
+
+
+
+.image-break {
     height: 400px;
-    object-fit: cover;
+    background-image: url('/images/gasolin1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
