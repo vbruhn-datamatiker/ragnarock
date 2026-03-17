@@ -94,13 +94,22 @@ div.scroll-container img {
 }
 /* Image break, plads mellem sektioner*/
 
-
-
-
 .image-break {
     height: 400px;
     background-image: url('/images/gasolin1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+/* Styling af cards i bandemedlemmer*/
+
+    .card:hover {
+        transform: scale(1.03);
+    }
+
+
+/* Space mellem Collapse menu og knap */
+.collapse {
+    margin-top: 10px;
 }
