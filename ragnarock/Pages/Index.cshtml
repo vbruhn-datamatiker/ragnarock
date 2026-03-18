@@ -6,7 +6,7 @@
 
 <div class="text-center">
     <h1 class="display-4"><b>Særudstilling: Gasolin'</b></h1>
-
+</div>
     <!-- MODUL 1 -->
     <div class="modul" id="modul1">
         <!-- Div Container til Introduktion -->
@@ -45,17 +45,6 @@
 
         <h1>Bandmedlemmer</h1>
 
-        <!-- Div Container til Bandemedlemmer image gallery -->
-        <!-- Tab navigation buttons
-        <div class="tabNav">
-            <button class="tablinks" tab="kimLarsen">Kim Larsen</button>
-            <button class="tablinks" tab="franzBeckerlee">Franz Beckerlee</button>
-            <button class="tablinks" tab="wiliJonsson">Wili Jønsson</button>
-            <button class="tablinks" tab="sorenBerlev">Soren Berlev</button>
-            <button class="tablinks" tab="bjornUglebjerg">Bjorn Uglebjerg</button>
-        </div>
-
-         -->
         <!------------ BANDEMEDLEMMERNE ------------>
         <div class="container mt-3 max-width">
             <!-- Row til display af medlemmer-->
@@ -278,9 +267,6 @@
                                             Bjørn Uglebjerg (1948–1994) var den oprindelige trommeslager i Gasolin, da bandet blev dannet i 1969.
 
                                             Han var med til at forme bandets tidlige lyd og spillede på deres første udgivelser. Selvom han senere forlod bandet, var han en vigtig del af Gasolins begyndelse.
-
-<<<<<<< HEAD
-                                            Efter tiden i Gasolin arbejdede han videre med musik i andre projekter.
                                         </b>
                                     </p>
                                 </div>
@@ -288,13 +274,8 @@
                             </div>
 
                             <div class="image-break"></div>
-                        </div>
-=======
-                        Efter tiden i Gasolin arbejdede han videre med musik i andre projekter.
-                    </b>
-                </p>
-            </div>
-        </div>
+
+
         <!-- End of MODUL 2 -->
     </section>
     
@@ -305,33 +286,37 @@
     <section class="content-section" id="modul3">
         <h1>Galleri</h1>
 
-
     </section>
 
     <!-- IMAGE BREAK -->
     <div class="image-break image-break3"></div>
 
-    <!-- modul 3 -->
+    <!-- modul 4 -->
     <section class="content-section" id="modul4">
         <h1>Section 4</h1>
+    <h2>Gasolin Quiz</h2>
 
-        <form method="post">
-            @for (int i = 0; i < Model.Questions.Count; i++)
-            {
-                <div>
-                    <p>@Model.Questions[i].Question</p>
-                    <input asp-for="Answers[i]" />
-                </div>
-            }
+    @for (int i = 0; i < Model.Questions.Count; i++)
+    {
+        <div class="quiz-card">
+            <h4>@Model.Questions[i].Question</h4>
 
-            <button type="submit">Tjek svar</button>
-        </form>
+            <form method="post">
+                <input type="hidden" name="questionIndex" value="@i" />
 
-        @if (Model.Result != null)
-        {
-            <p>@Model.Result</p>
-        }
+                @foreach (var answer in Model.Questions[i].Options)
+                {
+                    <button type="submit" name="selectedAnswer" value="@answer" class="quiz-btn">
+                        @answer
+                    </button>
+                }
+            </form>
+        </div>
+    }
+
+    @if (Model.Result != null)
+    {
+        <p class="quiz-result">@Model.Result</p>
+    }
     </section>
 
-
-</div>

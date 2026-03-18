@@ -7,45 +7,77 @@ namespace ragnarock.Pages
     {
         //List til quiz questions
         public List<QuizQuestion> Questions = new List<QuizQuestion>
-    {
-        new QuizQuestion { Question = "Hvornår blev Gasolin' dannet?", CorrectAnswer = "1969" },
-        new QuizQuestion { Question = "Hvornår blev bandet opløst?", CorrectAnswer = "1978"},
-        new QuizQuestion { Question = "Hvem var forsanger i Gasolin'?", CorrectAnswer = "Kim Larsen"},
-        new QuizQuestion { Question = "Hvor mange medlemmer var der i Gasolin'?", CorrectAnswer = "4"},
-        new QuizQuestion { Question = "Hvem var den originale trommeslager?", CorrectAnswer = "Bjørn Uglebjerg"}
+        {
+            new QuizQuestion
+            {
+                Question = "Hvornår blev Gasolin dannet?",
+                CorrectAnswer = "1969",
+                Options = new List<string> { "1967", "1969", "1972" }
+            },
 
-    };
+            new QuizQuestion
+            {
+                Question = "Hvem var forsanger?",
+                CorrectAnswer = "Kim Larsen",
+                Options = new List<string> { "Franz Beckerlee", "Kim Larsen", "Søren Berlev" }
+            },
+                        new QuizQuestion
+            {
+                Question = "Hvornår blev bandet opløst=",
+                CorrectAnswer = "1978",
+                Options = new List<string> { "1978", "1981", "1979" }
+            },
+
+            new QuizQuestion
+            {
+                Question = "Hvor mange medlemmer var der i Gasolin'?",
+                CorrectAnswer = "4",
+                Options = new List<string> { "5", "4", "3" }
+            },
+
+                        new QuizQuestion
+            {
+                Question = "Hvem var den originale trommeslager?",
+                CorrectAnswer = "Bjørn Uglebjerg",
+                Options = new List<string> { "Søren Berlev", "Wili Jønsson", "Bjørn Uglebjerg" }
+            }
+
+        };
         public void OnGet()
         {
 
         }
 
-        public string Result { get; set; }
+        [BindProperty]
+        public string SelectedAnswer { get; set; }
 
         [BindProperty]
-        public List<string> Answers { get; set; }
+        public int QuestionIndex { get; set; }
 
-        public void OnPost()
+        public string Result { get; set; }
+
+        public void OnPost(string selectedAnswer, int questionIndex)
         {
-            int score = 0;
-
-            for (int i = 0; i < Questions.Count; i++)
+            if (selectedAnswer == Questions[questionIndex].CorrectAnswer)
             {
-                if (Answers[i] == Questions[i].CorrectAnswer)
-                {
-                    score++;
-                }
+                Result = "? Korrekt!";
             }
-
-            Result = $"Du fik {score} rigtige";
+            else
+            {
+                Result = $"? Forkert. Rigtigt svar er: {Questions[questionIndex].CorrectAnswer}";
+            }
         }
+
     }
+
+
 
     // Public class til quiz questions
     public class QuizQuestion
     {
         public string Question { get; set; }
         public string CorrectAnswer { get; set; }
+        public List<string> Options { get; set; }
     };
 
 
