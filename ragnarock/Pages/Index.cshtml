@@ -270,12 +270,7 @@
                                         </b>
                                     </p>
                                 </div>
-                                <!-- End of MODUL 2 Div -->
                             </div>
-
-                            <div class="image-break"></div>
-
-
         <!-- End of MODUL 2 -->
     </section>
     
@@ -293,8 +288,9 @@
 
     <!-- modul 4 -->
     <section class="content-section" id="modul4">
-        <h1>Section 4</h1>
-    <h2>Gasolin Quiz</h2>
+      <div class="text-center">
+        <h1>Test din viden!</h1>
+        <h2>Hvor meget Gasolin' fan er du?</h2>
 
     @for (int i = 0; i < Model.Questions.Count; i++)
     {
@@ -318,5 +314,6 @@
     {
         <p class="quiz-result">@Model.Result</p>
     }
+      </div>
     </section>
 

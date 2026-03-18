@@ -23,7 +23,7 @@ namespace ragnarock.Pages
             },
                         new QuizQuestion
             {
-                Question = "Hvornår blev bandet opløst=",
+                Question = "Hvornår blev bandet opløst?",
                 CorrectAnswer = "1978",
                 Options = new List<string> { "1978", "1981", "1979" }
             },
@@ -60,17 +60,15 @@ namespace ragnarock.Pages
         {
             if (selectedAnswer == Questions[questionIndex].CorrectAnswer)
             {
-                Result = "? Korrekt!";
+                Result = " Korrekt!";
             }
             else
             {
-                Result = $"? Forkert. Rigtigt svar er: {Questions[questionIndex].CorrectAnswer}";
+                Result = $" Forkert. Prøv igen! (Tip: Svaret findes her på siden eller ved at gå på opdagelse i udstillingen!)";
             }
         }
 
     }
-
-
 
     // Public class til quiz questions
     public class QuizQuestion
@@ -79,8 +77,6 @@ namespace ragnarock.Pages
         public string CorrectAnswer { get; set; }
         public List<string> Options { get; set; }
     };
-
-
 
 
 }
