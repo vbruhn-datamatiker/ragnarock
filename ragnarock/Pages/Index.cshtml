@@ -372,7 +372,6 @@
 <section class="content-section" id="modul4">
     <div class="text-center">
         <h1>Test din viden!</h1>
-        <section class="content-section" action="modul4">
             <div class="container">
                 <h1>Hvor meget Gasolin' fan er du?</h1>
 
@@ -385,7 +384,7 @@
 
                         <div class="quiz-options">
                         <!-- action="#modul4" laver anchor så man bliver ved quizzen efter hvert submit -->
-                        <form method="post" href="#modul4">
+                        <form method="post" action="#modul4">
                             <input type="hidden" name="questionIndex" value="@Model.CurrentQuestionIndex" />
                             <input type="hidden" name="score" value="@Model.Score" />
 
@@ -419,8 +418,7 @@
 
                 }
             </div>
-        </section>
-
     </div>
 </section>
+
 
