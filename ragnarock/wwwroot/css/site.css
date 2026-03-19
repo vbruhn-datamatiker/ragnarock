@@ -120,6 +120,13 @@ div.scroll-container img {
 }
 
 /* Forskellige billeder til breaks */
+
+.image-break0 {
+    background-image: url('/images/gasolin4.JPG');
+    /* Lav IMG sort/hvid */
+    filter: grayscale(100%)
+}
+
 .image-break1 {
     background-image: url('/images/gasolin1.jpg');
 }

@@ -8,6 +8,7 @@ namespace ragnarock.Pages
         //List til quiz questions
         public List<QuizQuestion> Questions = new List<QuizQuestion>
         {
+            //Her oprettes et nyt spørgsmål-objekt med selve spørgsmålet, svarmuligheder og korrekt svar
             new QuizQuestion
             {
                 Question = "Hvornår blev Gasolin dannet?",
@@ -81,6 +82,8 @@ namespace ragnarock.Pages
     }
 
     // Public class til quiz questions
+    //Struktur, dvs. hvert spørgsmål skal altid have:
+    //Question, correct Answer, Options
     public class QuizQuestion
     {
         public string Question { get; set; }
