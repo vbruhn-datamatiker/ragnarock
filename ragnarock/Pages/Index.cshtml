@@ -334,13 +334,13 @@
                 Er for at vise 1 spørgsmål ad gangen-->
                 @if (Model.CurrentQuestionIndex < Model.Questions.Count)
                 {
+                    <!--Hent spørgsmål fra listen -->
                     var question = Model.Questions[Model.CurrentQuestionIndex];
 
                     <div class="quiz-card">
                         <h4>@question.Question</h4>
 
                         <div class="quiz-options">
-                        <!-- action="#modul4" laver anchor så man bliver ved quizzen efter hvert submit -->
                         <form method="post">
                             <input type="hidden" name="questionIndex" value="@Model.CurrentQuestionIndex" />
                             <input type="hidden" name="score" value="@Model.Score" />

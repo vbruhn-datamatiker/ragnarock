@@ -44,10 +44,6 @@ namespace ragnarock.Pages
             }
 
         };
-        public void OnGet()
-        {
-
-        }
 
         [BindProperty]
         public string SelectedAnswer { get; set; }
@@ -60,6 +56,8 @@ namespace ragnarock.Pages
         public int Score { get; set; } = 0;
         public bool AnswerSubmitted { get; set; }
 
+
+        //Modtager værdier fra form (når brugeren vælger en svarmulighed)
         public void OnPost(string selectedAnswer, int questionIndex, int score)
         {
             Score = score;
@@ -76,6 +74,7 @@ namespace ragnarock.Pages
                 Result = $" Forkert. Prøv igen! (Tip: Svaret findes her på siden eller ved at gå på opdagelse i udstillingen!)";
             }
 
+            //Går videre til næste spørgsmål i listen
             CurrentQuestionIndex = questionIndex + 1;
         }
 
