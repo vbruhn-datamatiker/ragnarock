@@ -288,7 +288,7 @@
         </div>
     </div>
 
-    <!-- Indhold til bandemedlemmerne -->
+    <!-- Indhold til bandemedlemmerne (kan måske slettes) -->
     <!-- Kim Larsen -->
     <div class="container" max-width>
         <div id="kimLarsen" class="tabcontent">
@@ -372,30 +372,55 @@
 <section class="content-section" id="modul4">
     <div class="text-center">
         <h1>Test din viden!</h1>
-        <h2>Hvor meget Gasolin' fan er du?</h2>
+        <section class="content-section" action="modul4">
+            <div class="container">
+                <h1>Hvor meget Gasolin' fan er du?</h1>
 
-        @for (int i = 0; i < Model.Questions.Count; i++)
-        {
-            <div class="quiz-card">
-                <h4>@Model.Questions[i].Question</h4>
+                @if (Model.CurrentQuestionIndex < Model.Questions.Count)
+                {
+                    var question = Model.Questions[Model.CurrentQuestionIndex];
 
-                <form method="post">
-                    <input type="hidden" name="questionIndex" value="@i" />
+                    <div class="quiz-card">
+                        <h4>@question.Question</h4>
 
-                    @foreach (var answer in Model.Questions[i].Options)
+                        <div class="quiz-options">
+                        <!-- action="#modul4" laver anchor så man bliver ved quizzen efter hvert submit -->
+                        <form method="post" href="#modul4">
+                            <input type="hidden" name="questionIndex" value="@Model.CurrentQuestionIndex" />
+                            <input type="hidden" name="score" value="@Model.Score" />
+
+                            @foreach (var answer in question.Options)
+                            {
+                                <button type="submit" name="selectedAnswer" value="@answer" class="quiz-btn">
+                                    @answer
+                                </button>
+                 
+                            }
+                        </form>
+                        </div>
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(Model.Result))
                     {
-                        <button type="submit" name="selectedAnswer" value="@answer" class="quiz-btn">
-                            @answer
-                        </button>
+                        <p class="quiz-result">@Model.Result</p>
                     }
-                </form>
-            </div>
-        }
+                }
+                else
+                {
+                    <div class="quiz-card">
+                        <h4>Quiz færdig 🎉</h4>
+                        <p>Din score er: @Model.Score / @Model.Questions.Count</p>
+                    </div>
 
-        @if (Model.Result != null)
-        {
-            <p class="quiz-result">@Model.Result</p>
-        }
+                    <!-- Prøv igen knap-->
+                    <form method="get"> 
+                        <button type="submit" class="retry-btn">Prøv igen</button>
+                    </form>
+
+                }
+            </div>
+        </section>
+
     </div>
 </section>
 

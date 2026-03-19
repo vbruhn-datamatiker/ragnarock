@@ -159,29 +159,60 @@ div.scroll-container img {
 
 /* STYLING AF QUIZ Knapper*/
 .quiz-card {
-    margin-bottom: 30px;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    background: #f8f5f0;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 700px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+.quiz-card h4 {
+    margin-bottom: 25px;
+    color: #2c2c2c;
 }
 
 .quiz-btn {
-    margin: 5px;
-    padding: 10px 20px;
+    margin: 8px;
+    padding: 12px 20px;
     border: none;
-    background-color: darkred;
+    border-radius: 10px;
+    background-color: #8b0000;
     color: white;
-    border-radius: 8px;
-    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
 }
-
+}
     .quiz-btn:hover {
         background-color: #a00000;
     }
 
+.quiz-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
 .quiz-result {
+    margin-top: 20px;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.retry-btn {
     margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.correct-text {
+    color: green;
+}
+
+.wrong-text {
+    color: red;
 }

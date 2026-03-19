@@ -55,17 +55,27 @@ namespace ragnarock.Pages
         public int QuestionIndex { get; set; }
 
         public string Result { get; set; }
+        public int CurrentQuestionIndex { get; set; } = 0;
+        public int Score { get; set; } = 0;
+        public bool AnswerSubmitted { get; set; }
 
-        public void OnPost(string selectedAnswer, int questionIndex)
+        public void OnPost(string selectedAnswer, int questionIndex, int score)
         {
+            Score = score;
+            SelectedAnswer = selectedAnswer;
+            AnswerSubmitted = true;
+
             if (selectedAnswer == Questions[questionIndex].CorrectAnswer)
             {
+                Score++;
                 Result = " Korrekt!";
             }
             else
             {
                 Result = $" Forkert. Prøv igen! (Tip: Svaret findes her på siden eller ved at gå på opdagelse i udstillingen!)";
             }
+
+            CurrentQuestionIndex = questionIndex + 1;
         }
 
     }
