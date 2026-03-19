@@ -3,19 +3,31 @@
 
 // Write your JavaScript code.
 
-//Den her kode mangler uddybning
-document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll(".tablinks");
+//Slettet tabID og tilføjet scroller til sektionen
 
-    tabs.forEach(tab => {
-        tab.addEventListener("click", function () {
+//Scroller den til sektionen og luk hambermenu
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', e => {
+        const targetId = link.getAttribute('href');
+        if (targetId.startsWith('#')) {
+            e.preventDefault();
+            document.querySelector(targetId).scrollIntoView({ behavior: 'smooth' });
+        }
 
-            document.querySelectorAll(".tabcontent").forEach(content => {
-                content.style.display = "none";
-            });
-
-            const tabId = this.getAttribute("tab");
-            document.getElementById(tabId).style.display = "block";
-        });
+        // Luk navbar på mobil
+        const navbar = document.querySelector('.navbar-collapse');
+        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbar);
+        bsCollapse.hide();
     });
 });
+const rows = document.querySelectorAll('.scrolly-row');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.3 });
+
+rows.forEach(row => observer.observe(row));

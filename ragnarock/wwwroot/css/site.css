@@ -19,16 +19,29 @@ html {
     min-height: 100%;
 }
 
+h1, h2, h3, h5, h6 {
+    letter-spacing: 1px;
+}
+
 body {
-    margin-bottom: 60px;
-    background-color: lightgray;
+    background-color: #111;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #000 !important;
+}
+
+.btn-warning {
+    background-color: #f5c518;
+    border: none;
 }
 
 header {
     background-color: black;
 }
 
-/* Adjusted the container to ocupy the max with of the body */
+/* Adjusted the container to occupy the max with of the body */
 div.container {
     max-width: 100%;
 }
@@ -69,8 +82,34 @@ div.scroll-container img {
     padding: 80px 20px;
     max-width: 100%;
     margin: auto;
-    background-color: dimgray;
+    background-color: #111;
 }
+
+/* Zig-zag effekt med fade-in */
+.scrolly-row {
+    margin-bottom: 4rem;
+}
+
+    .scrolly-row img {
+        transition: transform 0.3s, opacity 0.6s;
+    }
+
+        .scrolly-row img:hover {
+            transform: scale(1.05);
+        }
+
+/* Fade-in ved scroll */
+.scrolly-row {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+
+    .scrolly-row.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 /* Image breaks, plads mellem sektioner*/
 
 .image-break {
@@ -97,6 +136,13 @@ div.scroll-container img {
 /*--------------------- Styling af cards i bandemedlemmer -------------------**/
 .card:hover {
     transform: scale(1.03);
+    transition: 0.3s;
+}
+
+.card {
+    background-color: #1a1a1a;
+    color: white;
+    border: none;
 }
 
 /* Space mellem Collapse menu og knap */
