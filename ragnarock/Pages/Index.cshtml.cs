@@ -8,6 +8,7 @@ namespace ragnarock.Pages
         //List til quiz questions
         public List<QuizQuestion> Questions = new List<QuizQuestion>
         {
+            //Her oprettes et nyt spørgsmål-objekt med selve spørgsmålet, svarmuligheder og korrekt svar
             new QuizQuestion
             {
                 Question = "Hvornår blev Gasolin dannet?",
@@ -43,10 +44,6 @@ namespace ragnarock.Pages
             }
 
         };
-        public void OnGet()
-        {
-
-        }
 
         [BindProperty]
         public string SelectedAnswer { get; set; }
@@ -59,6 +56,8 @@ namespace ragnarock.Pages
         public int Score { get; set; } = 0;
         public bool AnswerSubmitted { get; set; }
 
+
+        //Modtager værdier fra form (når brugeren vælger en svarmulighed)
         public void OnPost(string selectedAnswer, int questionIndex, int score)
         {
             Score = score;
@@ -75,12 +74,15 @@ namespace ragnarock.Pages
                 Result = $" Forkert. Prøv igen! (Tip: Svaret findes her på siden eller ved at gå på opdagelse i udstillingen!)";
             }
 
+            //Går videre til næste spørgsmål i listen
             CurrentQuestionIndex = questionIndex + 1;
         }
 
     }
 
     // Public class til quiz questions
+    //Struktur, dvs. hvert spørgsmål skal altid have:
+    //Question, correct Answer, Options
     public class QuizQuestion
     {
         public string Question { get; set; }

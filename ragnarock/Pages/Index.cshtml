@@ -5,27 +5,31 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4 mb-4 mt-4 fw-bold text-bg-danger text-center"><b>Særudstilling: Gasolin'</b></h1>
+    <h1 class="display-4 mb-4 mt-4 text-bg-light text-center"><b>SÆRUDSTILLING: GASOLIN'</b></h1>
 </div>
 
+<!--MODUL 0 -->
+<section class="content-section">
+    <div id="modul1" class="modul scrolly-section py-5 mb-4 bg-dark text-white">
+        <!-- Div Container til Introduktion -->
+        <h5 class="mb-4 text-center m-5 mb-5">
+            Gasolin' var et af de mest ikoniske og indflydelsesrige rockbands i dansk musikhistorie. Bandet blev dannet i 1969 i København og bestod af Kim Larsen, Franz Beckerlee, Wili Jønsson og Bjørn Uglebjerg, som senere blev erstattet af Søren Berlev. <br /><br />
 
-<!-- MODUL 1 -->
-<div id="modul1" class="modul scrolly-section py-5 mb-4 bg-dark text-white">
-    <!-- Div Container til Introduktion -->
-    <h5 class="mb-4 text-center m-5 mb-5">
-        Gasolin' var et af de mest ikoniske og indflydelsesrige rockbands i dansk musikhistorie. Bandet blev dannet i 1969 i København og bestod af Kim Larsen, Franz Beckerlee, Wili Jønsson og Bjørn Uglebjerg, som senere blev erstattet af Søren Berlev. <br /><br />
+            I 1970’erne blev Gasolin kendt for deres energiske rockmusik, stærke tekster og unikke lyd, der kombinerede rock, blues og danske sangtraditioner. Bandets karismatiske forsanger Kim Larsen blev hurtigt en af Danmarks mest folkekære musikere.<br /><br />
 
-        I 1970’erne blev Gasolin kendt for deres energiske rockmusik, stærke tekster og unikke lyd, der kombinerede rock, blues og danske sangtraditioner. Bandets karismatiske forsanger Kim Larsen blev hurtigt en af Danmarks mest folkekære musikere.<br /><br />
+            Gasolin udgav flere succesfulde albums og hitsange, som stadig bliver spillet i dag. Deres musik og attitude var med til at forme den danske rockscene og inspirere generationer af musikere.<br /><br />
 
-        Gasolin udgav flere succesfulde albums og hitsange, som stadig bliver spillet i dag. Deres musik og attitude var med til at forme den danske rockscene og inspirere generationer af musikere.<br /><br />
-
-        Selvom bandet blev opløst i 1978, lever deres musik videre som en vigtig del af dansk kultur og rockhistorie. Gasolin huskes i dag som et band, der formåede at samle danskerne omkring deres musik og skabe en helt særlig stemning, som stadig kan mærkes mange år senere.<br /><br />
-    </h5>
+            Selvom bandet blev opløst i 1978, lever deres musik videre som en vigtig del af dansk kultur og rockhistorie. Gasolin huskes i dag som et band, der formåede at samle danskerne omkring deres musik og skabe en helt særlig stemning, som stadig kan mærkes mange år senere.<br /><br />
+        </h5>
+    </section>
+    <!-- IMAGE BREAK -->
+    <div class="image-break image-break0"></div>
 
 
+    <!-- MODUL 1 -->
     <section class="scrolly-section py-5 bg-dark text-white">
         <div class="container">
-            <h1 class="display-4 text-center mb-5">Gasolin' Historie</h1>
+            <h1 class="display-4 text-center mb-5">Gasolin's Historie</h1>
 
             <!-- Dannelse -->
             <div class="row align-items-center mb-5 scrolly-row">
@@ -96,27 +100,6 @@
     </section>
 
 
-
-    <!-- Tidslinje evt tilføj tidslinje billede ?-->
-    <div id="timeline" class="container py-4">
-        <h2>Tidslinje</h2>
-        <div class="row g-3">
-
-            <div class="col-md-4">
-                <img src="~/images/gasolin1.jpg" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-4">
-                <img src="~/images/gasolin2.jpg" class="img-fluid rounded shadow">
-            </div>
-            <div class="col-md-4">
-                <img src="~/images/gasolin3.jpg" class="img-fluid rounded shadow">
-            </div>
-        </div>
-    </div>
-
-
-
-
     <!------------ End of MODUL 1 ---------->
 </div>
 
@@ -124,9 +107,8 @@
 <div class="image-break image-break1"></div>
 
 
-
-<!--------- MODUL 2 --------->
-<section class="content-section" id="modul">
+<!--------------------- MODUL 2 ------------------------->
+<section class="content-section" id="modul2">
 
     <h1>Bandmedlemmer</h1>
 
@@ -136,324 +118,265 @@
         <div class="row">
 
             <!-- KIM LARSEN -->
-            <div class="col-md-3">
-                <div class="card">
+            <div class="col">
+                <div class="card" id="kimlarsen">
                     <img src="~/images/kimlarsen2.png" class="card-img-top" alt="Kim Larsen">
-                    <div class="card-body">
-                        <h4 class="card-title">Kim Larsen</h4>
-                        <p class="card-text">Forsanger</p>
+                        <div class="card-body">
+                            <h4 class="card-title">Kim Larsen</h4>
+                            <p class="card-text">Forsanger</p>
 
-                        <!-- Offcanvas trigger button -->
-                        <button class="btn btn-dark"
-                                type="button"
-                                data-bs-toggle="offcanvas"
-                                data-bs-target="#kimOffcanvas"
-                                aria-controls="kimOffcanvas">
-                            Se mere
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Offcanvas panel -->
-            <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="kimOffcanvas" aria-labelledby="kimOffcanvasLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="kimOffcanvasLabel">Kim Larsen</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    Kim Larsen (1945–2018) var forsanger, guitarist og sangskriver i Gasolin'...
-                    <!-- Put as much text as you like here -->
-                </div>
-            </div>
-
-            <!-- FRANZ BECKERLEE -->
-            <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="~/images/franzbeckerlee.jpg" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">Franz Beckerlee</h4>
-                        <p class="card-text">Guitarist ?</p>
-
-                        <!-- Click-to-expand knap for at se mere om medlem-->
-                        <a class="btn btn-primary"
-                           data-bs-toggle="collapse"
-                           href="#franzCollapse"
-                           role="button"
-                           aria-expanded="false"
-                           aria-controls="franzCollapse">
-                            Se mere
-                        </a>
-
-                        <!-- Tekstfelt til collapse -->
-                        <div class="collapse" id="franzCollapse">
-                            <div class="card card-body">
-                                Skriv noget her om Franz Beckerlee
-                            </div>
+                            <!-- Offcanvas trigger button -->
+                            <button class="btn btn-dark"
+                                    type="button"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#kimOffcanvas"
+                                    aria-controls="kimOffcanvas">
+                                Se mere
+                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Wili Jønsson -->
-            <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="~/images/wilijonsson.jpg" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">Wili Jønsson</h4>
-                        <p class="card-text">Bassist</p>
+                <!-- Offcanvas panel -->
+                <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="kimOffcanvas" aria-labelledby="kimOffcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="kimOffcanvasLabel">Kim Larsen</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
 
-                        <!-- Click-to-expand knap for at se mere om medlem-->
-                        <a class="btn btn-primary"
-                           data-bs-toggle="collapse"
-                           href="#wiliCollapse"
-                           role="button"
-                           aria-expanded="false"
-                           aria-controls="wiliCollapse">
-                            Se mere
-                        </a>
+                    <!-- Pop-ud tekstfelt til beskrivelse af bandmedlemmer -->
+                    <div class="offcanvas-body">
+                        <p>
+                            Kim Larsen (1945–2018) var forsanger, guitarist og sangskriver i Gasolin og er en af de mest kendte musikere i dansk musikhistorie. Han blev født i København og var kendt for sin karakteristiske stemme, stærke tekster og evne til at skrive sange, som mange danskere kunne relatere til.
 
-                        <!-- Tekstfelt til collapse -->
-                        <div class="collapse" id="wiliCollapse">
-                            <div class="card card-body">
-                                Skriv noget her om Wili Jønsson
+                            I Gasolin var Kim Larsen en central figur og skrev mange af bandets største hits. Hans tekster handlede ofte om hverdagslivet, samfundet og menneskelige følelser, hvilket gjorde bandets musik meget populær.
+
+                            Efter Gasolin blev opløst i 1978, fortsatte Kim Larsen en succesfuld solokarriere og udgav mange populære albums. Han er stadig i dag en af de mest elskede musikere i Danmark.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FRANZ BECKERLEE -->
+                <div class="col">
+                    <div class="card">
+                        <img class="card-img-top" src="~/images/franzbeckerlee.jpg" alt="Card image">
+                            <div class="card-body">
+                                <h4 class="card-title">Franz Beckerlee</h4>
+                                <p class="card-text">Guitarist</p>
+
+                                <!-- Offcanvas trigger button -->
+                                <button class="btn btn-dark"
+                                        type="button"
+                                        data-bs-toggle="offcanvas"
+                                        data-bs-target="#franzOffcanvas"
+                                        aria-controls="franzOffcanvas">
+                                    Se mere
+                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- SØREN BERLEV -->
-            <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="~/images/sorenberlev.jpg" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">Søren Berlev</h4>
-                        <p class="card-text">Trommeslager</p>
+                    <!-- Offcanvas panel -->
+                    <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="franzOffcanvas" aria-labelledby="franzOffcanvasLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="franzOffcanvasLabel">Franz Beckerlee</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <!-- Pop-ud tekstfelt til beskrivelse af bandmedlemmer -->
+                            <p>
+                                Franz Beckerlee (født 1946) var guitarist i Gasolin og kendt for sin rå og energiske spillestil. Han spillede en vigtig rolle i at skabe bandets karakteristiske rocklyd.
 
-                        <!-- Click-to-expand knap for at se mere om medlem-->
-                        <a class="btn btn-primary"
-                           data-bs-toggle="collapse"
-                           href="#sorenCollapse"
-                           role="button"
-                           aria-expanded="false"
-                           aria-controls="sorenCollapse">
-                            Se mere
-                        </a>
+                                Før Gasolin spillede Beckerlee i forskellige jazz- og rockbands, og han bragte mange musikalske inspirationer med ind i gruppen. Hans guitarspil var ofte inspireret af blues og psykedelisk rock.
 
-                        <!-- Tekstfelt til collapse -->
-                        <div class="collapse" id="sorenCollapse">
-                            <div class="card card-body">
-                                Skriv noget her om Kim Larsen
-                            </div>
+                                Efter Gasolin fortsatte Franz Beckerlee med musik, men arbejdede også med kunst og fotografi.
+                            </p>
+
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- BJØRN UGLEBJERG -->
-            <div class="col">
-                <div class="card">
-                    <img class="card-img-top" src="~/images/bjornuglebjerg.jpg" alt="Card image">
-                    <div class="card-body">
-                        <h4 class="card-title">Bjørn Uglebjerg</h4>
-                        <p class="card-text">Trommeslager</p>
+                    <!-- Wili Jønsson -->
+                    <div class="col">
+                        <div class="card">
+                            <img class="card-img-top" src="~/images/wilijonsson.jpg" alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Wili Jønsson</h4>
+                                    <p class="card-text">Bassist</p>
 
-                        <!-- Click-to-expand knap for at se mere om medlem-->
-                        <a class="btn btn-primary"
-                           data-bs-toggle="collapse"
-                           href="#bjornCollapse"
-                           role="button"
-                           aria-expanded="false"
-                           aria-controls="bjornCollapse">
-                            Se mere
-                        </a>
 
-                        <!-- Tekstfelt til collapse -->
-                        <div class="collapse" id="bjornCollapse">
-                            <div class="card card-body">
+                                    <!-- Offcanvas trigger button -->
+                                    <button class="btn btn-dark"
+                                            type="button"
+                                            data-bs-toggle="offcanvas"
+                                            data-bs-target="#wiliOffcanvas"
+                                            aria-controls="wiliOffcanvas">
+                                        Se mere
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Offcanvas panel -->
+                        <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="wiliOffcanvas" aria-labelledby="wiliOffcanvasLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="wiliOffcanvasLabel">Wili Jønsson</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <!-- Pop-ud tekstfelt til beskrivelse af bandmedlemmer -->
                                 <p>
-                                    Kim Larsen (1945–2018) var forsanger, guitarist og sangskriver i Gasolin og er en af de mest kendte musikere i dansk musikhistorie. Han blev født i København og var kendt for sin karakteristiske stemme, stærke tekster og evne til at skrive sange, som mange danskere kunne relatere til.
+                                    Wili Jønsson (født 1942) var bassist i Gasolin og en vigtig del af bandets rytmiske fundament. Hans basspil var med til at give bandets musik en stærk og stabil bund.
 
-                                    I Gasolin var Kim Larsen en central figur og skrev mange af bandets største hits. Hans tekster handlede ofte om hverdagslivet, samfundet og menneskelige følelser, hvilket gjorde bandets musik meget populær.
+                                    Jønsson var også med til at skrive nogle af bandets sange og bidrog til den kreative proces i gruppen. Hans musikalske stil var inspireret af både rock og blues.
 
-                                    Efter Gasolin blev opløst i 1978, fortsatte Kim Larsen en succesfuld solokarriere og udgav mange populære albums. Han er stadig i dag en af de mest elskede musikere i Danmark.
-
+                                    Efter Gasolin arbejdede han videre med musik og deltog i forskellige projekter.
                                 </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Indhold til bandemedlemmerne (kan måske slettes) -->
-    <!-- Kim Larsen -->
-    <div class="container" max-width>
-        <div id="kimLarsen" class="tabcontent">
-            <p>
-                <b>
-                    Kim Larsen (1945–2018) var forsanger, guitarist og sangskriver i Gasolin og er en af de mest kendte musikere i dansk musikhistorie. Han blev født i København og var kendt for sin karakteristiske stemme, stærke tekster og evne til at skrive sange, som mange danskere kunne relatere til.
+                        <!-- SØREN BERLEV -->
+                        <div class="col">
+                            <div class="card">
+                                <img class="card-img-top" src="~/images/sorenberlev.jpg" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Søren Berlev</h4>
+                                        <p class="card-text">Trommeslager</p>
 
-                    I Gasolin var Kim Larsen en central figur og skrev mange af bandets største hits. Hans tekster handlede ofte om hverdagslivet, samfundet og menneskelige følelser, hvilket gjorde bandets musik meget populær.
+                                        <!-- Offcanvas trigger button -->
+                                        <button class="btn btn-dark"
+                                                type="button"
+                                                data-bs-toggle="offcanvas"
+                                                data-bs-target="#sorenOffcanvas"
+                                                aria-controls="sorenOffcanvas">
+                                            Se mere
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
 
-                    Efter Gasolin blev opløst i 1978, fortsatte Kim Larsen en succesfuld solokarriere og udgav mange populære albums. Han er stadig i dag en af de mest elskede musikere i Danmark.
-                </b>
-            </p>
-        </div>
+                            <!-- Offcanvas panel -->
+                            <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="sorenOffcanvas" aria-labelledby="sorenOffcanvasLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="sorenOffcanvasLabel">Søren Berlev</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <!-- Pop-ud tekstfelt til beskrivelse af bandmedlemmer -->
+                                    <p>
+                                        Søren Berlev (født 1950) var trommeslager i Gasolin og blev medlem af bandet i begyndelsen af 1970’erne, hvor han erstattede Bjørn Uglebjerg.
 
-        <!-- Franz Beckerlee -->
-        <div id="franzBeckerlee" class="tabcontent">
-            <p>
-                <b>
-                    Franz Beckerlee (født 1946) var guitarist i Gasolin og kendt for sin rå og energiske spillestil. Han spillede en vigtig rolle i at skabe bandets karakteristiske rocklyd.
+                                        Berlev var kendt for sin kraftfulde trommestil, som passede perfekt til Gasolins energiske rockmusik. Han var med på flere af bandets mest kendte albums og spillede en vigtig rolle i deres liveoptrædener.
 
-                    Før Gasolin spillede Beckerlee i forskellige jazz- og rockbands, og han bragte mange musikalske inspirationer med ind i gruppen. Hans guitarspil var ofte inspireret af blues og psykedelisk rock.
+                                        Efter Gasolin fortsatte Berlev sin karriere som musiker og spillede i forskellige bands.
+                                    </p>
+                                </div>
+                            </div>
 
-                    Efter Gasolin fortsatte Franz Beckerlee med musik, men arbejdede også med kunst og fotografi.
-                </b>
-            </p>
-        </div>
+                            <!-- BJØRN UGLEBJERG -->
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card-img-top" src="~/images/bjornuglebjerg.jpg" alt="Card image">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Bjørn Uglebjerg</h4>
+                                            <p class="card-text">Trommeslager</p>
 
-        <!-- Wili Jønsson -->
-        <div id="wiliJonsson" class="tabcontent">
-            <p>
-                <b>
-                    Wili Jønsson (født 1942) var bassist i Gasolin og en vigtig del af bandets rytmiske fundament. Hans basspil var med til at give bandets musik en stærk og stabil bund.
+                                            <!-- Offcanvas trigger button -->
+                                            <button class="btn btn-dark"
+                                                    type="button"
+                                                    data-bs-toggle="offcanvas"
+                                                    data-bs-target="#bjornOffcanvas"
+                                                    aria-controls="bjornOffcanvas">
+                                                Se mere
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    Jønsson var også med til at skrive nogle af bandets sange og bidrog til den kreative proces i gruppen. Hans musikalske stil var inspireret af både rock og blues.
+                                <!-- Offcanvas panel -->
+                                <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="bjornOffcanvas" aria-labelledby="bjornOffcanvasLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="bjornOffcanvasLabel">Bjørn Uglebjerg</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <!-- Pop-ud tekstfelt til beskrivelse af bandmedlemmer -->
+                                        <p>
+                                            Bjørn Uglebjerg (1948–1994) var den oprindelige trommeslager i Gasolin, da bandet blev dannet i 1969.
 
-                    Efter Gasolin arbejdede han videre med musik og deltog i forskellige projekter.
-                </b>
-            </p>
-        </div>
+                                            Han var med til at forme bandets tidlige lyd og spillede på deres første udgivelser. Selvom han senere forlod bandet, var han en vigtig del af Gasolins begyndelse.
+                                        </p>
+                                    </div>
+                                </div>
 
-        <!-- Søren Berlev -->
-        <div id="sorenBerlev" class="tabcontent">
-            <p>
-                <b>
-                    Søren Berlev (født 1950) var trommeslager i Gasolin og blev medlem af bandet i begyndelsen af 1970’erne, hvor han erstattede Bjørn Uglebjerg.
+                                <!-- End of MODUL 2 -->
+                            </section>
 
-                    Berlev var kendt for sin kraftfulde trommestil, som passede perfekt til Gasolins energiske rockmusik. Han var med på flere af bandets mest kendte albums og spillede en vigtig rolle i deres liveoptrædener.
+                            <!-- IMAGE BREAK -->
+                            <div class="image-break image-break2"></div>
 
-                    Efter Gasolin fortsatte Berlev sin karriere som musiker og spillede i forskellige bands.
-                </b>
-            </p>
-        </div>
+                            <!-- modul 3 -->
+                            <section class="content-section" id="modul3">
+                                <h1>Galleri</h1>
 
-        <!-- Bjørn Uglebjerg -->
-        <div id="bjornUglebjerg" class="tabcontent">
-            <p>
-                <b>
-                    Bjørn Uglebjerg (1948–1994) var den oprindelige trommeslager i Gasolin, da bandet blev dannet i 1969.
+                            </section>
 
-                    Han var med til at forme bandets tidlige lyd og spillede på deres første udgivelser. Selvom han senere forlod bandet, var han en vigtig del af Gasolins begyndelse.
-                </b>
-            </p>
-        </div>
-    </div>
-    <!-- End of MODUL 2 -->
-</section>
+                            <!-- IMAGE BREAK -->
+                            <div class="image-break image-break3"></div>
 
-<!-- IMAGE BREAK -->
-<div class="image-break image-break2"></div>
+                            <!-- modul 4 -->
+                            <section class="content-section" id="modul4">
+                                <div class="text-center">
+                                    <h1>Test din viden!</h1>
+                                    <div class="container">
+                                        <h1>Hvor meget Gasolin' fan er du?</h1>
 
-<!-- modul 3 -->
-<section class="content-section" id="modul3">
-    <h1>Galleri</h1>
+                                        <!-- if statement, sørger for at vise næste spørgsmål, sålænge de stadig findes.
+                Er for at vise 1 spørgsmål ad gangen-->
+                                        @if (Model.CurrentQuestionIndex < Model.Questions.Count)
+                                        {
+                                            <!--Hent spørgsmål fra listen -->
+                                            var question = Model.Questions[Model.CurrentQuestionIndex];
 
-    <div id="carouselExampleIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active ">
-                <img src="~/images/gasolin gruppe.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="~/images/gasolin ældre.jpg" class="w-75 p-3 img-fluid" alt="Responsive image">
-            </div>
-            <div class="carousel-item">
-                <img src="~/images/gasolin 4.jpg" class="w-75 p-3 img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="~/images/gasolin løbe.jpg" class="w-75 p-3 img-fluid" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="~/images/gasolin producer.jpg" class="w-75 p-3 img-fluid" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+                                            <div class="quiz-card">
+                                                <h4>@question.Question</h4>
 
-</section>
+                                                <div class="quiz-options">
+                                                    <form method="post">
+                                                        <input type="hidden" name="questionIndex" value="@Model.CurrentQuestionIndex" />
+                                                        <input type="hidden" name="score" value="@Model.Score" />
 
-<!-- IMAGE BREAK -->
-<div class="image-break image-break3"></div>
+                                                        @foreach (var answer in question.Options)
+                                                        {
+                                                            @* <button type="submit" name="selectedAnswer" value="@answer" class="quiz-btn">
+                                                                @answer
+                                                            </button> *@
+                                                            <button type="button" class="quiz-btn" onclick="submitAnswer('@answer')">@answer</button>
 
-<!-- modul 4 -->
-<section class="content-section" id="modul4">
-    <div class="text-center">
-        <h1>Test din viden!</h1>
-            <div class="container">
-                <h1>Hvor meget Gasolin' fan er du?</h1>
+                                                        }
+                                                    </form>
+                                                </div>
+                                            </div>
 
-                @if (Model.CurrentQuestionIndex < Model.Questions.Count)
-                {
-                    var question = Model.Questions[Model.CurrentQuestionIndex];
+                                            @if (!string.IsNullOrEmpty(Model.Result))
+                                            {
+                                                <p class="quiz-result">@Model.Result</p>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <div class="quiz-card">
+                                                <h4>Quiz færdig 🎉</h4>
+                                                <p>Din score er: @Model.Score / @Model.Questions.Count</p>
+                                            </div>
 
-                    <div class="quiz-card">
-                        <h4>@question.Question</h4>
+                                            <!-- Prøv igen knap-->
+                                            <form method="get">
+                                                <button type="button" class="retry-btn">Prøv igen</button>
+                                            </form>
 
-                        <div class="quiz-options">
-                        <!-- action="#modul4" laver anchor så man bliver ved quizzen efter hvert submit -->
-                        <form method="post" action="#modul4">
-                            <input type="hidden" name="questionIndex" value="@Model.CurrentQuestionIndex" />
-                            <input type="hidden" name="score" value="@Model.Score" />
-
-                            @foreach (var answer in question.Options)
-                            {
-                                <button type="submit" name="selectedAnswer" value="@answer" class="quiz-btn">
-                                    @answer
-                                </button>
-                 
-                            }
-                        </form>
-                        </div>
-                    </div>
-
-                    @if (!string.IsNullOrEmpty(Model.Result))
-                    {
-                        <p class="quiz-result">@Model.Result</p>
-                    }
-                }
-                else
-                {
-                    <div class="quiz-card">
-                        <h4>Quiz færdig 🎉</h4>
-                        <p>Din score er: @Model.Score / @Model.Questions.Count</p>
-                    </div>
-
-                    <!-- Prøv igen knap-->
-                    <form method="get"> 
-                        <button type="submit" class="retry-btn">Prøv igen</button>
-                    </form>
-
-                }
-            </div>
-    </div>
-</section>
+                                        }
+                                    </div>
+                                </div>
+                            </section>
 
 
