@@ -23,7 +23,7 @@
     </h5>
 
 
-    <section class="scrolly-section py-5 bg-dark text-white">
+    <section class="scrolly-section py-5 bg-dark text-white">   
         <div class="container">
             <h1 class="display-4 text-center mb-5">Gasolin' Historie</h1>
 
@@ -124,8 +124,7 @@
 <div class="image-break image-break1"></div>
 
 
-
-<!--------- MODUL 2 --------->
+<!--------------------- MODUL 2 ------------------------->
 <section class="content-section" id="modul">
 
     <h1>Bandmedlemmer</h1>
@@ -175,23 +174,27 @@
                         <h4 class="card-title">Franz Beckerlee</h4>
                         <p class="card-text">Guitarist ?</p>
 
-                        <!-- Click-to-expand knap for at se mere om medlem-->
-                        <a class="btn btn-primary"
-                           data-bs-toggle="collapse"
-                           href="#franzCollapse"
-                           role="button"
-                           aria-expanded="false"
-                           aria-controls="franzCollapse">
+                        <!-- Offcanvas trigger button -->
+                        <button class="btn btn-dark"
+                                type="button"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#franzOffcanvas"
+                                aria-controls="franzOffcanvas">
                             Se mere
-                        </a>
-
-                        <!-- Tekstfelt til collapse -->
-                        <div class="collapse" id="franzCollapse">
-                            <div class="card card-body">
-                                Skriv noget her om Franz Beckerlee
-                            </div>
-                        </div>
+                        </button>
                     </div>
+                </div>
+            </div>
+
+            <!-- Offcanvas panel -->
+            <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="franzOffcanvas" aria-labelledby="franzOffcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="franzOffcanvasLabel">Franz Beckerlee</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    Franz ....
+                    <!-- Put as much text as you like here -->
                 </div>
             </div>
 
@@ -203,23 +206,27 @@
                         <h4 class="card-title">Wili Jønsson</h4>
                         <p class="card-text">Bassist</p>
 
-                        <!-- Click-to-expand knap for at se mere om medlem-->
-                        <a class="btn btn-primary"
-                           data-bs-toggle="collapse"
-                           href="#wiliCollapse"
-                           role="button"
-                           aria-expanded="false"
-                           aria-controls="wiliCollapse">
+                        <!-- Offcanvas trigger button -->
+                        <button class="btn btn-dark"
+                                type="button"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#wiliOffcanvas"
+                                aria-controls="wiliOffcanvas">
                             Se mere
-                        </a>
-
-                        <!-- Tekstfelt til collapse -->
-                        <div class="collapse" id="wiliCollapse">
-                            <div class="card card-body">
-                                Skriv noget her om Wili Jønsson
-                            </div>
-                        </div>
+                        </button>
                     </div>
+                </div>
+            </div>
+
+            <!-- Offcanvas panel -->
+            <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="wiliOffcanvas" aria-labelledby="wiliOffcanvasLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="wiliOffcanvasLabel">Wili Jønsson</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    Wili....
+                    <!-- Put as much text as you like here -->
                 </div>
             </div>
 
@@ -384,7 +391,7 @@
 
                         <div class="quiz-options">
                         <!-- action="#modul4" laver anchor så man bliver ved quizzen efter hvert submit -->
-                        <form method="post" action="#modul4">
+                        <form method="post">
                             <input type="hidden" name="questionIndex" value="@Model.CurrentQuestionIndex" />
                             <input type="hidden" name="score" value="@Model.Score" />
 

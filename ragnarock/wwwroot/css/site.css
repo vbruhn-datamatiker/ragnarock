@@ -145,11 +145,6 @@ div.scroll-container img {
     border: none;
 }
 
-/* Space mellem Collapse menu og knap */
-.collapse {
-    margin-top: 10px;
-}
-
 /* Ens billedstørrelse */
 .card-img-top {
     height: 300px;
@@ -180,7 +175,6 @@ div.scroll-container img {
     color: white;
     font-size: 1rem;
     transition: 0.3s;
-}
 }
     .quiz-btn:hover {
         background-color: #a00000;
