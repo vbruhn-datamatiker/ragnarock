@@ -55,26 +55,27 @@ div.container {
     text-align: start;
 }
 
-/* PHOTO GALLERY Styling */
+*/
 
-div.photo-gallery {
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 10px;
-}
+/* Justerer størrelsen af img i .carousel og sørger for de er samme størrelse, men stadig kan skalere
+    display:flex - flexbox
+    justify-content: center; horisontal centrering
+    align-items - vertikal centrering
+*/
 
-div.scroll-container img {
-    padding: 10px;
-}
+/*.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}*/
 
-/* Justerer størrelsen af img i .photo-gallery og sørger for de er samme størrelse, men stadig kan skalere*/
-.photo-gallery img {
+.carousel-item img {
     width: 100%;
-    max-width: 300px;
-    height: 200px;
+    max-width: 500px;
+    height: 300px;
     object-fit: cover;
 }
+
 
 /* .content-section - inddeling af sektioner */
 
@@ -138,6 +139,8 @@ div.scroll-container img {
 .image-break3 {
     background-image: url('/images/gasolin2.jpg')
 }
+
+
 
 
 /*--------------------- Styling af cards i bandemedlemmer -------------------**/
@@ -208,12 +211,4 @@ div.scroll-container img {
     border-radius: 10px;
     background-color: #333;
     color: white;
-}
-
-.correct-text {
-    color: green;
-}
-
-.wrong-text {
-    color: red;
 }
