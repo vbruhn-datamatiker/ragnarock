@@ -128,6 +128,12 @@ div.container {
     background-position: center;
     background-attachment: fixed;
 }
+/* Turn off parallax on mobile */
+@media (max-width: 768px) {
+    .image-break {
+        background-attachment: scroll;
+    }
+}
 
 /* Forskellige billeder til breaks */
 
@@ -148,6 +154,8 @@ div.container {
 .image-break3 {
     background-image: url('/images/gasolin2.jpg')
 }
+
+
 
 /*--------------------- Styling af cards i bandemedlemmer -------------------**/
 .card:hover {
